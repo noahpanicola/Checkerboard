@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challenge1.FXMLDocumentController">
+   <children>
+      <MenuBar fx:id="menuBar" prefHeight="30.0" prefWidth="600.0">
+        <menus>
+          <Menu fx:id="gridOption" mnemonicParsing="false" text="Grid">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleGridChange" text="16 x 16" />
+                <MenuItem mnemonicParsing="false" onAction="#handleGridChange" text="10 x 10" />
+                <MenuItem mnemonicParsing="false" onAction="#handleGridChange" text="8 x 8" />
+                <MenuItem mnemonicParsing="false" onAction="#handleGridChange" text="3 x 3" />
+            </items>
+          </Menu>
+            <Menu fx:id="colorOption" mnemonicParsing="false" text="Colors">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleColorChange" text="Default" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleColorChange" text="Blue" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane maxHeight="Infinity" maxWidth="Infinity" fx:id="anchorPane" prefHeight="800" prefWidth="800.0">
+      </AnchorPane>
+   </children>
+</VBox>
